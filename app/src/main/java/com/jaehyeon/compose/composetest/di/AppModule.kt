@@ -32,6 +32,7 @@ object AppModule {
         return NoteRepositoryImpl(db.noteDao)
     }
 
+
     @Provides
     @Singleton
     fun provideNoteUseCases(repository: NoteRepository): NoteUseCases {
